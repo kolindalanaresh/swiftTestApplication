@@ -9,7 +9,7 @@
 import UIKit
 
 class TableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    let animals: [String] = ["Collection View", "Web View", "Slider", "Sheep", "Goat"]
+    let animals: [String] = ["Collection View", "Web View", "Slider", "Picker", "Goat"]
     let cellReuseIdentifier = "cell"
     let customcellReuseIdentifier = "SampleTableViewCell"
     
@@ -23,28 +23,28 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
         customTV.register(UINib(nibName: "SampleTableViewCell", bundle: nil), forCellReuseIdentifier: "SampleTableViewCell")
         
         //seperator style remove
-//        customTV.separatorStyle = .none
+        //        customTV.separatorStyle = .none
         // (optional) include this line if you want to remove the extra empty cell divider lines
         // self.tableView.tableFooterView = UIView()
-
+        
         // This view controller itself will provide the delegate methods and row data for the table view.
         toptableView.delegate = self
         toptableView.dataSource = self
         
         customTV.delegate = self
         customTV.dataSource = self
-
+        
     }
     // number of rows in table view
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.animals.count
     }
-
+    
     // create a cell for each table view row
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if tableView == toptableView {
             let cell:UITableViewCell = toptableView.dequeueReusableCell(withIdentifier: cellReuseIdentifier)!
-
+            
             // set the text from the data model
             cell.textLabel?.text = self.animals[indexPath.row]
             return cell
@@ -57,29 +57,32 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
         }
         // create a new cell if needed or reuse an old one
         
-
+        
         
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if tableView == toptableView {
-         return 30
+            return 30
         }
         return 40;
     }
-
+    
     // method to run when table view cell is tapped
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("You tapped cell number \(indexPath.row).")
         if indexPath.row == 0 {
-             let vc = CollectionViewController(nibName: "CollectionViewController", bundle: nil)
-             self.navigationController!.pushViewController(vc, animated: true)
+            let vc = CollectionViewController(nibName: "CollectionViewController", bundle: nil)
+            self.navigationController!.pushViewController(vc, animated: true)
         } else if indexPath.row == 1 {
-             let vc = WebViewController(nibName: "WebViewController", bundle: nil)
-             self.navigationController!.pushViewController(vc, animated: true)
+            let vc = WebViewController(nibName: "WebViewController", bundle: nil)
+            self.navigationController!.pushViewController(vc, animated: true)
         } else if indexPath.row == 2 {
-                    let vc = SliderViewController(nibName: "SliderViewController", bundle: nil)
-                    self.navigationController!.pushViewController(vc, animated: true)
-               }
+            let vc = SliderViewController(nibName: "SliderViewController", bundle: nil)
+            self.navigationController!.pushViewController(vc, animated: true)
+        } else if indexPath.row == 3 {
+            let vc = PickerViewController(nibName: "PickerViewController", bundle: nil)
+            self.navigationController!.pushViewController(vc, animated: true)
+        }
     }
 }
