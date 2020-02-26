@@ -27,7 +27,21 @@ class ViewController: UIViewController {
         
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        
+        //hide Navigation bar
+        self.navigationController?.navigationBar.isHidden = true
+    }
+    
     @objc func onClickLogin(_ sender: UIButton!) {
+        
+        //moving to xib from Navigation controller
+        let vc = WebViewController(nibName: "WebViewController", bundle: nil)
+        self.navigationController!.pushViewController(vc, animated: true)
+
+
+
+        /*
         let name = nameTF.text ?? ""
         let password = passwordTF.text ?? ""
         if !name.isEmpty {
@@ -40,7 +54,7 @@ class ViewController: UIViewController {
                 }
             }
         }
-        
+        */
     }
 }
 

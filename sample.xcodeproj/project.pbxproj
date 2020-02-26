@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		849ABEA42406525100619666 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849ABEA22406525100619666 /* WebViewController.swift */; };
+		849ABEA52406525100619666 /* WebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 849ABEA32406525100619666 /* WebViewController.xib */; };
 		FD0A4FEF23D5A33A00123B94 /* OperatorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0A4FEE23D5A33A00123B94 /* OperatorsViewController.swift */; };
 		FD0A4FF123D5AB2300123B94 /* StringsAndCharactersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0A4FF023D5AB2300123B94 /* StringsAndCharactersViewController.swift */; };
 		FD0A4FF323D5B7EF00123B94 /* CollectionTypesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0A4FF223D5B7EF00123B94 /* CollectionTypesViewController.swift */; };
@@ -40,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		849ABEA22406525100619666 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		849ABEA32406525100619666 /* WebViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WebViewController.xib; sourceTree = "<group>"; };
 		FD0A4FEE23D5A33A00123B94 /* OperatorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperatorsViewController.swift; sourceTree = "<group>"; };
 		FD0A4FF023D5AB2300123B94 /* StringsAndCharactersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringsAndCharactersViewController.swift; sourceTree = "<group>"; };
 		FD0A4FF223D5B7EF00123B94 /* CollectionTypesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionTypesViewController.swift; sourceTree = "<group>"; };
@@ -121,6 +125,8 @@
 				FD0A4FF223D5B7EF00123B94 /* CollectionTypesViewController.swift */,
 				FD0A4FF423D5C23100123B94 /* ControlFlowViewController.swift */,
 				FDDF417B23D6DAF400782E36 /* FunctionsViewController.swift */,
+				849ABEA22406525100619666 /* WebViewController.swift */,
+				849ABEA32406525100619666 /* WebViewController.xib */,
 			);
 			path = sample;
 			sourceTree = "<group>";
@@ -250,6 +256,7 @@
 				FD16ECD923BB604000AC6C31 /* LaunchScreen.storyboard in Resources */,
 				FD16ECD623BB604000AC6C31 /* Assets.xcassets in Resources */,
 				FD16ECD423BB603E00AC6C31 /* Main.storyboard in Resources */,
+				849ABEA52406525100619666 /* WebViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +282,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FDDF417C23D6DAF400782E36 /* FunctionsViewController.swift in Sources */,
+				849ABEA42406525100619666 /* WebViewController.swift in Sources */,
 				FD0A4FF523D5C23100123B94 /* ControlFlowViewController.swift in Sources */,
 				FD0A4FF123D5AB2300123B94 /* StringsAndCharactersViewController.swift in Sources */,
 				FD16ECFD23BB6C8700AC6C31 /* SecondViewController.swift in Sources */,
@@ -457,12 +465,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5JMM6D7KM8;
 				INFOPLIST_FILE = sample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sample.sample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wataniya.wataniyakuwait;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -474,12 +483,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5JMM6D7KM8;
 				INFOPLIST_FILE = sample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sample.sample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wataniya.wataniyakuwait;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
