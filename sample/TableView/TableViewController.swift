@@ -9,7 +9,7 @@
 import UIKit
 
 class TableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    let animals: [String] = ["Collection View", "Web View", "Camel", "Sheep", "Goat"]
+    let animals: [String] = ["Collection View", "Web View", "Slider", "Sheep", "Goat"]
     let cellReuseIdentifier = "cell"
     let customcellReuseIdentifier = "SampleTableViewCell"
     
@@ -21,7 +21,9 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
         // Register the table view cell class and its reuse id
         toptableView.register(UITableViewCell.self, forCellReuseIdentifier: cellReuseIdentifier)
         customTV.register(UINib(nibName: "SampleTableViewCell", bundle: nil), forCellReuseIdentifier: "SampleTableViewCell")
-
+        
+        //seperator style remove
+//        customTV.separatorStyle = .none
         // (optional) include this line if you want to remove the extra empty cell divider lines
         // self.tableView.tableFooterView = UIView()
 
@@ -48,7 +50,7 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
             return cell
         } else {
             let cell:SampleTableViewCell = customTV.dequeueReusableCell(withIdentifier: customcellReuseIdentifier) as! SampleTableViewCell
-
+            cell.selectionStyle = .none
             // set the text from the data model
             cell.titleLabel?.text = self.animals[indexPath.row]
             return cell
@@ -75,6 +77,9 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
         } else if indexPath.row == 1 {
              let vc = WebViewController(nibName: "WebViewController", bundle: nil)
              self.navigationController!.pushViewController(vc, animated: true)
-        }
+        } else if indexPath.row == 2 {
+                    let vc = SliderViewController(nibName: "SliderViewController", bundle: nil)
+                    self.navigationController!.pushViewController(vc, animated: true)
+               }
     }
 }

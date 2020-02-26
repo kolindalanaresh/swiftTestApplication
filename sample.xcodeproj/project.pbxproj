@@ -19,6 +19,8 @@
 		849ABEAB240676D100619666 /* CollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 849ABEA9240676D100619666 /* CollectionViewController.xib */; };
 		849ABEAE240676E300619666 /* SampleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849ABEAC240676E300619666 /* SampleCollectionViewCell.swift */; };
 		849ABEAF240676E300619666 /* SampleCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 849ABEAD240676E300619666 /* SampleCollectionViewCell.xib */; };
+		849ABEB324067C1600619666 /* SliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849ABEB124067C1600619666 /* SliderViewController.swift */; };
+		849ABEB424067C1600619666 /* SliderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 849ABEB224067C1600619666 /* SliderViewController.xib */; };
 		FD0A4FEF23D5A33A00123B94 /* OperatorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0A4FEE23D5A33A00123B94 /* OperatorsViewController.swift */; };
 		FD0A4FF123D5AB2300123B94 /* StringsAndCharactersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0A4FF023D5AB2300123B94 /* StringsAndCharactersViewController.swift */; };
 		FD0A4FF323D5B7EF00123B94 /* CollectionTypesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0A4FF223D5B7EF00123B94 /* CollectionTypesViewController.swift */; };
@@ -64,6 +66,8 @@
 		849ABEA9240676D100619666 /* CollectionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewController.xib; sourceTree = "<group>"; };
 		849ABEAC240676E300619666 /* SampleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleCollectionViewCell.swift; sourceTree = "<group>"; };
 		849ABEAD240676E300619666 /* SampleCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SampleCollectionViewCell.xib; sourceTree = "<group>"; };
+		849ABEB124067C1600619666 /* SliderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderViewController.swift; sourceTree = "<group>"; };
+		849ABEB224067C1600619666 /* SliderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SliderViewController.xib; sourceTree = "<group>"; };
 		FD0A4FEE23D5A33A00123B94 /* OperatorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperatorsViewController.swift; sourceTree = "<group>"; };
 		FD0A4FF023D5AB2300123B94 /* StringsAndCharactersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringsAndCharactersViewController.swift; sourceTree = "<group>"; };
 		FD0A4FF223D5B7EF00123B94 /* CollectionTypesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionTypesViewController.swift; sourceTree = "<group>"; };
@@ -143,6 +147,15 @@
 			path = CollectionView;
 			sourceTree = "<group>";
 		};
+		849ABEB024067BFF00619666 /* Slider */ = {
+			isa = PBXGroup;
+			children = (
+				849ABEB124067C1600619666 /* SliderViewController.swift */,
+				849ABEB224067C1600619666 /* SliderViewController.xib */,
+			);
+			path = Slider;
+			sourceTree = "<group>";
+		};
 		FD16ECC223BB603E00AC6C31 = {
 			isa = PBXGroup;
 			children = (
@@ -167,6 +180,7 @@
 		FD16ECCD23BB603E00AC6C31 /* sample */ = {
 			isa = PBXGroup;
 			children = (
+				849ABEB024067BFF00619666 /* Slider */,
 				849ABEA7240676B800619666 /* CollectionView */,
 				844B030C24066FF3007C9E22 /* TableView */,
 				FD16ECCE23BB603E00AC6C31 /* AppDelegate.swift */,
@@ -311,6 +325,7 @@
 			files = (
 				FD16ECD923BB604000AC6C31 /* LaunchScreen.storyboard in Resources */,
 				844B03102406701F007C9E22 /* SampleTableViewCell.xib in Resources */,
+				849ABEB424067C1600619666 /* SliderViewController.xib in Resources */,
 				849ABEAB240676D100619666 /* CollectionViewController.xib in Resources */,
 				FD16ECD623BB604000AC6C31 /* Assets.xcassets in Resources */,
 				FD16ECD423BB603E00AC6C31 /* Main.storyboard in Resources */,
@@ -342,6 +357,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				849ABEAA240676D100619666 /* CollectionViewController.swift in Sources */,
+				849ABEB324067C1600619666 /* SliderViewController.swift in Sources */,
 				844B030F2406701F007C9E22 /* SampleTableViewCell.swift in Sources */,
 				FDDF417C23D6DAF400782E36 /* FunctionsViewController.swift in Sources */,
 				849ABEA42406525100619666 /* WebViewController.swift in Sources */,
