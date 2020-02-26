@@ -9,7 +9,7 @@
 import UIKit
 
 class TableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    let animals: [String] = ["Horse", "Cow", "Camel", "Sheep", "Goat"]
+    let animals: [String] = ["Collection View", "Web View", "Camel", "Sheep", "Goat"]
     let cellReuseIdentifier = "cell"
     let customcellReuseIdentifier = "SampleTableViewCell"
     
@@ -17,7 +17,7 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
     @IBOutlet weak var toptableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.navigationController?.navigationBar.isHidden = false
         // Register the table view cell class and its reuse id
         toptableView.register(UITableViewCell.self, forCellReuseIdentifier: cellReuseIdentifier)
         customTV.register(UINib(nibName: "SampleTableViewCell", bundle: nil), forCellReuseIdentifier: "SampleTableViewCell")
@@ -69,5 +69,12 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
     // method to run when table view cell is tapped
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("You tapped cell number \(indexPath.row).")
+        if indexPath.row == 0 {
+             let vc = CollectionViewController(nibName: "CollectionViewController", bundle: nil)
+             self.navigationController!.pushViewController(vc, animated: true)
+        } else if indexPath.row == 1 {
+             let vc = WebViewController(nibName: "WebViewController", bundle: nil)
+             self.navigationController!.pushViewController(vc, animated: true)
+        }
     }
 }

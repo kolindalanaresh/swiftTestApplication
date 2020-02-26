@@ -15,6 +15,10 @@
 		844B03102406701F007C9E22 /* SampleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 844B030E2406701F007C9E22 /* SampleTableViewCell.xib */; };
 		849ABEA42406525100619666 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849ABEA22406525100619666 /* WebViewController.swift */; };
 		849ABEA52406525100619666 /* WebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 849ABEA32406525100619666 /* WebViewController.xib */; };
+		849ABEAA240676D100619666 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849ABEA8240676D100619666 /* CollectionViewController.swift */; };
+		849ABEAB240676D100619666 /* CollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 849ABEA9240676D100619666 /* CollectionViewController.xib */; };
+		849ABEAE240676E300619666 /* SampleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849ABEAC240676E300619666 /* SampleCollectionViewCell.swift */; };
+		849ABEAF240676E300619666 /* SampleCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 849ABEAD240676E300619666 /* SampleCollectionViewCell.xib */; };
 		FD0A4FEF23D5A33A00123B94 /* OperatorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0A4FEE23D5A33A00123B94 /* OperatorsViewController.swift */; };
 		FD0A4FF123D5AB2300123B94 /* StringsAndCharactersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0A4FF023D5AB2300123B94 /* StringsAndCharactersViewController.swift */; };
 		FD0A4FF323D5B7EF00123B94 /* CollectionTypesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0A4FF223D5B7EF00123B94 /* CollectionTypesViewController.swift */; };
@@ -56,6 +60,10 @@
 		844B030E2406701F007C9E22 /* SampleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SampleTableViewCell.xib; sourceTree = "<group>"; };
 		849ABEA22406525100619666 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		849ABEA32406525100619666 /* WebViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WebViewController.xib; sourceTree = "<group>"; };
+		849ABEA8240676D100619666 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		849ABEA9240676D100619666 /* CollectionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewController.xib; sourceTree = "<group>"; };
+		849ABEAC240676E300619666 /* SampleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleCollectionViewCell.swift; sourceTree = "<group>"; };
+		849ABEAD240676E300619666 /* SampleCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SampleCollectionViewCell.xib; sourceTree = "<group>"; };
 		FD0A4FEE23D5A33A00123B94 /* OperatorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperatorsViewController.swift; sourceTree = "<group>"; };
 		FD0A4FF023D5AB2300123B94 /* StringsAndCharactersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringsAndCharactersViewController.swift; sourceTree = "<group>"; };
 		FD0A4FF223D5B7EF00123B94 /* CollectionTypesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionTypesViewController.swift; sourceTree = "<group>"; };
@@ -124,6 +132,17 @@
 			path = TableView;
 			sourceTree = "<group>";
 		};
+		849ABEA7240676B800619666 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				849ABEA8240676D100619666 /* CollectionViewController.swift */,
+				849ABEA9240676D100619666 /* CollectionViewController.xib */,
+				849ABEAC240676E300619666 /* SampleCollectionViewCell.swift */,
+				849ABEAD240676E300619666 /* SampleCollectionViewCell.xib */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
 		FD16ECC223BB603E00AC6C31 = {
 			isa = PBXGroup;
 			children = (
@@ -148,6 +167,7 @@
 		FD16ECCD23BB603E00AC6C31 /* sample */ = {
 			isa = PBXGroup;
 			children = (
+				849ABEA7240676B800619666 /* CollectionView */,
 				844B030C24066FF3007C9E22 /* TableView */,
 				FD16ECCE23BB603E00AC6C31 /* AppDelegate.swift */,
 				FD16ECD023BB603E00AC6C31 /* ViewController.swift */,
@@ -291,9 +311,11 @@
 			files = (
 				FD16ECD923BB604000AC6C31 /* LaunchScreen.storyboard in Resources */,
 				844B03102406701F007C9E22 /* SampleTableViewCell.xib in Resources */,
+				849ABEAB240676D100619666 /* CollectionViewController.xib in Resources */,
 				FD16ECD623BB604000AC6C31 /* Assets.xcassets in Resources */,
 				FD16ECD423BB603E00AC6C31 /* Main.storyboard in Resources */,
 				844B030B24066FA5007C9E22 /* TableViewController.xib in Resources */,
+				849ABEAF240676E300619666 /* SampleCollectionViewCell.xib in Resources */,
 				849ABEA52406525100619666 /* WebViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -319,6 +341,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				849ABEAA240676D100619666 /* CollectionViewController.swift in Sources */,
 				844B030F2406701F007C9E22 /* SampleTableViewCell.swift in Sources */,
 				FDDF417C23D6DAF400782E36 /* FunctionsViewController.swift in Sources */,
 				849ABEA42406525100619666 /* WebViewController.swift in Sources */,
@@ -330,6 +353,7 @@
 				FD0A4FEF23D5A33A00123B94 /* OperatorsViewController.swift in Sources */,
 				FD0A4FF323D5B7EF00123B94 /* CollectionTypesViewController.swift in Sources */,
 				FD16ECCF23BB603E00AC6C31 /* AppDelegate.swift in Sources */,
+				849ABEAE240676E300619666 /* SampleCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
