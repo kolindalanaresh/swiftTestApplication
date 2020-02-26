@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		844B0305240667F3007C9E22 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 844B030324065585007C9E22 /* WebKit.framework */; };
 		844B030724066D87007C9E22 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 844B030624066D87007C9E22 /* Foundation.framework */; };
+		844B030A24066FA5007C9E22 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844B030824066FA5007C9E22 /* TableViewController.swift */; };
+		844B030B24066FA5007C9E22 /* TableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 844B030924066FA5007C9E22 /* TableViewController.xib */; };
+		844B030F2406701F007C9E22 /* SampleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844B030D2406701F007C9E22 /* SampleTableViewCell.swift */; };
+		844B03102406701F007C9E22 /* SampleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 844B030E2406701F007C9E22 /* SampleTableViewCell.xib */; };
 		849ABEA42406525100619666 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849ABEA22406525100619666 /* WebViewController.swift */; };
 		849ABEA52406525100619666 /* WebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 849ABEA32406525100619666 /* WebViewController.xib */; };
 		FD0A4FEF23D5A33A00123B94 /* OperatorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0A4FEE23D5A33A00123B94 /* OperatorsViewController.swift */; };
@@ -46,6 +50,10 @@
 /* Begin PBXFileReference section */
 		844B030324065585007C9E22 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		844B030624066D87007C9E22 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		844B030824066FA5007C9E22 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		844B030924066FA5007C9E22 /* TableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewController.xib; sourceTree = "<group>"; };
+		844B030D2406701F007C9E22 /* SampleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleTableViewCell.swift; sourceTree = "<group>"; };
+		844B030E2406701F007C9E22 /* SampleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SampleTableViewCell.xib; sourceTree = "<group>"; };
 		849ABEA22406525100619666 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		849ABEA32406525100619666 /* WebViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WebViewController.xib; sourceTree = "<group>"; };
 		FD0A4FEE23D5A33A00123B94 /* OperatorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperatorsViewController.swift; sourceTree = "<group>"; };
@@ -105,6 +113,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		844B030C24066FF3007C9E22 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				844B030824066FA5007C9E22 /* TableViewController.swift */,
+				844B030924066FA5007C9E22 /* TableViewController.xib */,
+				844B030D2406701F007C9E22 /* SampleTableViewCell.swift */,
+				844B030E2406701F007C9E22 /* SampleTableViewCell.xib */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
 		FD16ECC223BB603E00AC6C31 = {
 			isa = PBXGroup;
 			children = (
@@ -129,6 +148,7 @@
 		FD16ECCD23BB603E00AC6C31 /* sample */ = {
 			isa = PBXGroup;
 			children = (
+				844B030C24066FF3007C9E22 /* TableView */,
 				FD16ECCE23BB603E00AC6C31 /* AppDelegate.swift */,
 				FD16ECD023BB603E00AC6C31 /* ViewController.swift */,
 				FD16ECFC23BB6C8700AC6C31 /* SecondViewController.swift */,
@@ -270,8 +290,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD16ECD923BB604000AC6C31 /* LaunchScreen.storyboard in Resources */,
+				844B03102406701F007C9E22 /* SampleTableViewCell.xib in Resources */,
 				FD16ECD623BB604000AC6C31 /* Assets.xcassets in Resources */,
 				FD16ECD423BB603E00AC6C31 /* Main.storyboard in Resources */,
+				844B030B24066FA5007C9E22 /* TableViewController.xib in Resources */,
 				849ABEA52406525100619666 /* WebViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,9 +319,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				844B030F2406701F007C9E22 /* SampleTableViewCell.swift in Sources */,
 				FDDF417C23D6DAF400782E36 /* FunctionsViewController.swift in Sources */,
 				849ABEA42406525100619666 /* WebViewController.swift in Sources */,
 				FD0A4FF523D5C23100123B94 /* ControlFlowViewController.swift in Sources */,
+				844B030A24066FA5007C9E22 /* TableViewController.swift in Sources */,
 				FD0A4FF123D5AB2300123B94 /* StringsAndCharactersViewController.swift in Sources */,
 				FD16ECFD23BB6C8700AC6C31 /* SecondViewController.swift in Sources */,
 				FD16ECD123BB603E00AC6C31 /* ViewController.swift in Sources */,

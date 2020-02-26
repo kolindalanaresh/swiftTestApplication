@@ -36,7 +36,7 @@ class ViewController: UIViewController {
     @objc func onClickLogin(_ sender: UIButton!) {
         
         //moving to xib from Navigation controller
-        let vc = WebViewController(nibName: "WebViewController", bundle: nil)
+        let vc = TableViewController(nibName: "TableViewController", bundle: nil)
         self.navigationController!.pushViewController(vc, animated: true)
 
 
