@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ActionSheetViewController" customModule="sample" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6un-WZ-sd4">
+                    <rect key="frame" x="93" y="50" width="134" height="30"/>
+                    <state key="normal" title="Action Sheet"/>
+                    <connections>
+                        <action selector="onClickActionSheet:" destination="-1" eventType="touchUpInside" id="rbl-Rh-CTr"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ews-6h-x6f">
+                    <rect key="frame" x="93" y="110" width="134" height="30"/>
+                    <state key="normal" title="Alert"/>
+                    <connections>
+                        <action selector="onClickAlertButton:" destination="-1" eventType="touchUpInside" id="Okd-ZV-pkr"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IKF-ZH-APd">
+                    <rect key="frame" x="93" y="170" width="134" height="30"/>
+                    <state key="normal" title="Two Button Alert "/>
+                    <connections>
+                        <action selector="showAlertTwoButtonTapped:" destination="-1" eventType="touchUpInside" id="kal-pS-Grw"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zRP-dJ-Spa">
+                    <rect key="frame" x="93" y="230" width="134" height="30"/>
+                    <state key="normal" title="Three Button Alert"/>
+                    <connections>
+                        <action selector="showAlertThreeButtonTapped:" destination="-1" eventType="touchUpInside" id="8pR-NA-AXj"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LLY-Vz-gnr">
+                    <rect key="frame" x="93" y="290" width="134" height="30"/>
+                    <state key="normal" title="Alert With TextField"/>
+                    <connections>
+                        <action selector="showAlertController:" destination="-1" eventType="touchUpInside" id="9Jy-at-Y6k"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="LLY-Vz-gnr" firstAttribute="trailing" secondItem="zRP-dJ-Spa" secondAttribute="trailing" id="2OZ-iE-HrP"/>
+                <constraint firstItem="LLY-Vz-gnr" firstAttribute="leading" secondItem="zRP-dJ-Spa" secondAttribute="leading" id="6ig-0e-Ddz"/>
+                <constraint firstItem="LLY-Vz-gnr" firstAttribute="top" secondItem="zRP-dJ-Spa" secondAttribute="bottom" constant="30" id="BFa-A0-fEy"/>
+                <constraint firstItem="ews-6h-x6f" firstAttribute="top" secondItem="6un-WZ-sd4" secondAttribute="bottom" constant="30" id="G1G-oR-j0V"/>
+                <constraint firstItem="IKF-ZH-APd" firstAttribute="top" secondItem="ews-6h-x6f" secondAttribute="bottom" constant="30" id="RB2-R5-cE8"/>
+                <constraint firstItem="6un-WZ-sd4" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="Xfp-2K-dWu"/>
+                <constraint firstItem="zRP-dJ-Spa" firstAttribute="top" secondItem="IKF-ZH-APd" secondAttribute="bottom" constant="30" id="diO-2v-1nS"/>
+                <constraint firstItem="6un-WZ-sd4" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="fFX-G1-XfP"/>
+                <constraint firstItem="zRP-dJ-Spa" firstAttribute="leading" secondItem="IKF-ZH-APd" secondAttribute="leading" id="kev-Xx-EWR"/>
+                <constraint firstItem="ews-6h-x6f" firstAttribute="trailing" secondItem="6un-WZ-sd4" secondAttribute="trailing" id="oP4-yG-Ldn"/>
+                <constraint firstItem="IKF-ZH-APd" firstAttribute="leading" secondItem="ews-6h-x6f" secondAttribute="leading" id="qMI-po-0ZD"/>
+                <constraint firstItem="IKF-ZH-APd" firstAttribute="trailing" secondItem="ews-6h-x6f" secondAttribute="trailing" id="qdt-Yq-eO8"/>
+                <constraint firstItem="ews-6h-x6f" firstAttribute="leading" secondItem="6un-WZ-sd4" secondAttribute="leading" id="sqB-Yw-Ul8"/>
+                <constraint firstItem="zRP-dJ-Spa" firstAttribute="trailing" secondItem="IKF-ZH-APd" secondAttribute="trailing" id="u6L-B8-frf"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="139" y="130"/>
+        </view>
+    </objects>
+</document>

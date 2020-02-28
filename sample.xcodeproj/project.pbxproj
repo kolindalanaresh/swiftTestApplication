@@ -23,6 +23,8 @@
 		849ABEB424067C1600619666 /* SliderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 849ABEB224067C1600619666 /* SliderViewController.xib */; };
 		849ABEB824067FC200619666 /* PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849ABEB624067FC200619666 /* PickerViewController.swift */; };
 		849ABEB924067FC200619666 /* PickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 849ABEB724067FC200619666 /* PickerViewController.xib */; };
+		84DA5DE9240927DD008B42CC /* ActionSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DA5DE7240927DD008B42CC /* ActionSheetViewController.swift */; };
+		84DA5DEA240927DD008B42CC /* ActionSheetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84DA5DE8240927DD008B42CC /* ActionSheetViewController.xib */; };
 		FD0A4FEF23D5A33A00123B94 /* OperatorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0A4FEE23D5A33A00123B94 /* OperatorsViewController.swift */; };
 		FD0A4FF123D5AB2300123B94 /* StringsAndCharactersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0A4FF023D5AB2300123B94 /* StringsAndCharactersViewController.swift */; };
 		FD0A4FF323D5B7EF00123B94 /* CollectionTypesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0A4FF223D5B7EF00123B94 /* CollectionTypesViewController.swift */; };
@@ -72,6 +74,8 @@
 		849ABEB224067C1600619666 /* SliderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SliderViewController.xib; sourceTree = "<group>"; };
 		849ABEB624067FC200619666 /* PickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewController.swift; sourceTree = "<group>"; };
 		849ABEB724067FC200619666 /* PickerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PickerViewController.xib; sourceTree = "<group>"; };
+		84DA5DE7240927DD008B42CC /* ActionSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionSheetViewController.swift; sourceTree = "<group>"; };
+		84DA5DE8240927DD008B42CC /* ActionSheetViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActionSheetViewController.xib; sourceTree = "<group>"; };
 		FD0A4FEE23D5A33A00123B94 /* OperatorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperatorsViewController.swift; sourceTree = "<group>"; };
 		FD0A4FF023D5AB2300123B94 /* StringsAndCharactersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringsAndCharactersViewController.swift; sourceTree = "<group>"; };
 		FD0A4FF223D5B7EF00123B94 /* CollectionTypesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionTypesViewController.swift; sourceTree = "<group>"; };
@@ -169,6 +173,15 @@
 			path = Picker;
 			sourceTree = "<group>";
 		};
+		84DA5DE6240927C2008B42CC /* Action Sheet */ = {
+			isa = PBXGroup;
+			children = (
+				84DA5DE7240927DD008B42CC /* ActionSheetViewController.swift */,
+				84DA5DE8240927DD008B42CC /* ActionSheetViewController.xib */,
+			);
+			path = "Action Sheet";
+			sourceTree = "<group>";
+		};
 		FD16ECC223BB603E00AC6C31 = {
 			isa = PBXGroup;
 			children = (
@@ -193,6 +206,7 @@
 		FD16ECCD23BB603E00AC6C31 /* sample */ = {
 			isa = PBXGroup;
 			children = (
+				84DA5DE6240927C2008B42CC /* Action Sheet */,
 				849ABEB524067FB000619666 /* Picker */,
 				849ABEB024067BFF00619666 /* Slider */,
 				849ABEA7240676B800619666 /* CollectionView */,
@@ -341,6 +355,7 @@
 				844B03102406701F007C9E22 /* SampleTableViewCell.xib in Resources */,
 				849ABEB424067C1600619666 /* SliderViewController.xib in Resources */,
 				849ABEAB240676D100619666 /* CollectionViewController.xib in Resources */,
+				84DA5DEA240927DD008B42CC /* ActionSheetViewController.xib in Resources */,
 				FD16ECD623BB604000AC6C31 /* Assets.xcassets in Resources */,
 				FD16ECD423BB603E00AC6C31 /* Main.storyboard in Resources */,
 				844B030B24066FA5007C9E22 /* TableViewController.xib in Resources */,
@@ -371,6 +386,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84DA5DE9240927DD008B42CC /* ActionSheetViewController.swift in Sources */,
 				849ABEB824067FC200619666 /* PickerViewController.swift in Sources */,
 				849ABEAA240676D100619666 /* CollectionViewController.swift in Sources */,
 				849ABEB324067C1600619666 /* SliderViewController.swift in Sources */,

@@ -9,7 +9,7 @@
 import UIKit
 
 class TableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    let animals: [String] = ["Collection View", "Web View", "Slider", "Picker", "Goat"]
+    let animals: [String] = ["Collection View", "Web View", "Slider", "Picker", "Action Sheet"]
     let cellReuseIdentifier = "cell"
     let customcellReuseIdentifier = "SampleTableViewCell"
     
@@ -82,6 +82,9 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
             self.navigationController!.pushViewController(vc, animated: true)
         } else if indexPath.row == 3 {
             let vc = PickerViewController(nibName: "PickerViewController", bundle: nil)
+            self.navigationController!.pushViewController(vc, animated: true)
+        } else if indexPath.row == 4 {
+            let vc = ActionSheetViewController(nibName: "ActionSheetViewController", bundle: nil)
             self.navigationController!.pushViewController(vc, animated: true)
         }
     }
