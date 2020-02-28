@@ -9,7 +9,7 @@
 import UIKit
 
 class TableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    let animals: [String] = ["Collection View", "Web View", "Slider", "Picker", "Action Sheet"]
+    let animals: [String] = ["Collection View", "Web View", "Slider", "Picker", "Action Sheet", "Contacts"]
     let cellReuseIdentifier = "cell"
     let customcellReuseIdentifier = "SampleTableViewCell"
     
@@ -55,9 +55,6 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
             cell.titleLabel?.text = self.animals[indexPath.row]
             return cell
         }
-        // create a new cell if needed or reuse an old one
-        
-        
         
     }
     
@@ -85,6 +82,9 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
             self.navigationController!.pushViewController(vc, animated: true)
         } else if indexPath.row == 4 {
             let vc = ActionSheetViewController(nibName: "ActionSheetViewController", bundle: nil)
+            self.navigationController!.pushViewController(vc, animated: true)
+        } else if indexPath.row == 5 {
+            let vc = ContactsViewController(nibName: "ContactsViewController", bundle: nil)
             self.navigationController!.pushViewController(vc, animated: true)
         }
     }

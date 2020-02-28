@@ -13,6 +13,8 @@
 		844B030B24066FA5007C9E22 /* TableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 844B030924066FA5007C9E22 /* TableViewController.xib */; };
 		844B030F2406701F007C9E22 /* SampleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844B030D2406701F007C9E22 /* SampleTableViewCell.swift */; };
 		844B03102406701F007C9E22 /* SampleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 844B030E2406701F007C9E22 /* SampleTableViewCell.xib */; };
+		846034C824092F8800634FF7 /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846034C624092F8800634FF7 /* ContactsViewController.swift */; };
+		846034C924092F8800634FF7 /* ContactsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 846034C724092F8800634FF7 /* ContactsViewController.xib */; };
 		849ABEA42406525100619666 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849ABEA22406525100619666 /* WebViewController.swift */; };
 		849ABEA52406525100619666 /* WebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 849ABEA32406525100619666 /* WebViewController.xib */; };
 		849ABEAA240676D100619666 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849ABEA8240676D100619666 /* CollectionViewController.swift */; };
@@ -64,6 +66,8 @@
 		844B030924066FA5007C9E22 /* TableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewController.xib; sourceTree = "<group>"; };
 		844B030D2406701F007C9E22 /* SampleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleTableViewCell.swift; sourceTree = "<group>"; };
 		844B030E2406701F007C9E22 /* SampleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SampleTableViewCell.xib; sourceTree = "<group>"; };
+		846034C624092F8800634FF7 /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
+		846034C724092F8800634FF7 /* ContactsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactsViewController.xib; sourceTree = "<group>"; };
 		849ABEA22406525100619666 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		849ABEA32406525100619666 /* WebViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WebViewController.xib; sourceTree = "<group>"; };
 		849ABEA8240676D100619666 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
@@ -144,6 +148,15 @@
 			path = TableView;
 			sourceTree = "<group>";
 		};
+		846034C524092F6F00634FF7 /* Contacts */ = {
+			isa = PBXGroup;
+			children = (
+				846034C624092F8800634FF7 /* ContactsViewController.swift */,
+				846034C724092F8800634FF7 /* ContactsViewController.xib */,
+			);
+			path = Contacts;
+			sourceTree = "<group>";
+		};
 		849ABEA7240676B800619666 /* CollectionView */ = {
 			isa = PBXGroup;
 			children = (
@@ -206,6 +219,7 @@
 		FD16ECCD23BB603E00AC6C31 /* sample */ = {
 			isa = PBXGroup;
 			children = (
+				846034C524092F6F00634FF7 /* Contacts */,
 				84DA5DE6240927C2008B42CC /* Action Sheet */,
 				849ABEB524067FB000619666 /* Picker */,
 				849ABEB024067BFF00619666 /* Slider */,
@@ -352,6 +366,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD16ECD923BB604000AC6C31 /* LaunchScreen.storyboard in Resources */,
+				846034C924092F8800634FF7 /* ContactsViewController.xib in Resources */,
 				844B03102406701F007C9E22 /* SampleTableViewCell.xib in Resources */,
 				849ABEB424067C1600619666 /* SliderViewController.xib in Resources */,
 				849ABEAB240676D100619666 /* CollectionViewController.xib in Resources */,
@@ -390,6 +405,7 @@
 				849ABEB824067FC200619666 /* PickerViewController.swift in Sources */,
 				849ABEAA240676D100619666 /* CollectionViewController.swift in Sources */,
 				849ABEB324067C1600619666 /* SliderViewController.swift in Sources */,
+				846034C824092F8800634FF7 /* ContactsViewController.swift in Sources */,
 				844B030F2406701F007C9E22 /* SampleTableViewCell.swift in Sources */,
 				FDDF417C23D6DAF400782E36 /* FunctionsViewController.swift in Sources */,
 				849ABEA42406525100619666 /* WebViewController.swift in Sources */,
