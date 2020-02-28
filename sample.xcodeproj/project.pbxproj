@@ -15,6 +15,8 @@
 		844B03102406701F007C9E22 /* SampleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 844B030E2406701F007C9E22 /* SampleTableViewCell.xib */; };
 		846034C824092F8800634FF7 /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846034C624092F8800634FF7 /* ContactsViewController.swift */; };
 		846034C924092F8800634FF7 /* ContactsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 846034C724092F8800634FF7 /* ContactsViewController.xib */; };
+		846034CD2409442C00634FF7 /* PageControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846034CB2409442C00634FF7 /* PageControlViewController.swift */; };
+		846034CE2409442C00634FF7 /* PageControlViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 846034CC2409442C00634FF7 /* PageControlViewController.xib */; };
 		849ABEA42406525100619666 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849ABEA22406525100619666 /* WebViewController.swift */; };
 		849ABEA52406525100619666 /* WebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 849ABEA32406525100619666 /* WebViewController.xib */; };
 		849ABEAA240676D100619666 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849ABEA8240676D100619666 /* CollectionViewController.swift */; };
@@ -68,6 +70,8 @@
 		844B030E2406701F007C9E22 /* SampleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SampleTableViewCell.xib; sourceTree = "<group>"; };
 		846034C624092F8800634FF7 /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
 		846034C724092F8800634FF7 /* ContactsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactsViewController.xib; sourceTree = "<group>"; };
+		846034CB2409442C00634FF7 /* PageControlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControlViewController.swift; sourceTree = "<group>"; };
+		846034CC2409442C00634FF7 /* PageControlViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PageControlViewController.xib; sourceTree = "<group>"; };
 		849ABEA22406525100619666 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		849ABEA32406525100619666 /* WebViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WebViewController.xib; sourceTree = "<group>"; };
 		849ABEA8240676D100619666 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
@@ -157,6 +161,15 @@
 			path = Contacts;
 			sourceTree = "<group>";
 		};
+		846034CA2409441200634FF7 /* Page Control */ = {
+			isa = PBXGroup;
+			children = (
+				846034CB2409442C00634FF7 /* PageControlViewController.swift */,
+				846034CC2409442C00634FF7 /* PageControlViewController.xib */,
+			);
+			path = "Page Control";
+			sourceTree = "<group>";
+		};
 		849ABEA7240676B800619666 /* CollectionView */ = {
 			isa = PBXGroup;
 			children = (
@@ -219,6 +232,7 @@
 		FD16ECCD23BB603E00AC6C31 /* sample */ = {
 			isa = PBXGroup;
 			children = (
+				846034CA2409441200634FF7 /* Page Control */,
 				846034C524092F6F00634FF7 /* Contacts */,
 				84DA5DE6240927C2008B42CC /* Action Sheet */,
 				849ABEB524067FB000619666 /* Picker */,
@@ -375,6 +389,7 @@
 				FD16ECD423BB603E00AC6C31 /* Main.storyboard in Resources */,
 				844B030B24066FA5007C9E22 /* TableViewController.xib in Resources */,
 				849ABEAF240676E300619666 /* SampleCollectionViewCell.xib in Resources */,
+				846034CE2409442C00634FF7 /* PageControlViewController.xib in Resources */,
 				849ABEB924067FC200619666 /* PickerViewController.xib in Resources */,
 				849ABEA52406525100619666 /* WebViewController.xib in Resources */,
 			);
@@ -404,6 +419,7 @@
 				84DA5DE9240927DD008B42CC /* ActionSheetViewController.swift in Sources */,
 				849ABEB824067FC200619666 /* PickerViewController.swift in Sources */,
 				849ABEAA240676D100619666 /* CollectionViewController.swift in Sources */,
+				846034CD2409442C00634FF7 /* PageControlViewController.swift in Sources */,
 				849ABEB324067C1600619666 /* SliderViewController.swift in Sources */,
 				846034C824092F8800634FF7 /* ContactsViewController.swift in Sources */,
 				844B030F2406701F007C9E22 /* SampleTableViewCell.swift in Sources */,
