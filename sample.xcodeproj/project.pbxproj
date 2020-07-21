@@ -29,6 +29,10 @@
 		849ABEB924067FC200619666 /* PickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 849ABEB724067FC200619666 /* PickerViewController.xib */; };
 		84DA5DE9240927DD008B42CC /* ActionSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DA5DE7240927DD008B42CC /* ActionSheetViewController.swift */; };
 		84DA5DEA240927DD008B42CC /* ActionSheetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84DA5DE8240927DD008B42CC /* ActionSheetViewController.xib */; };
+		A1D5EC3424C7452F002EE527 /* AppleMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D5EC3224C7452F002EE527 /* AppleMapViewController.swift */; };
+		A1D5EC3524C7452F002EE527 /* AppleMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1D5EC3324C7452F002EE527 /* AppleMapViewController.xib */; };
+		A1E3C99224C745D100A4EC20 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1E3C99124C745D100A4EC20 /* MapKit.framework */; };
+		A1E3C99424C7463100A4EC20 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1E3C99324C7463100A4EC20 /* CoreLocation.framework */; };
 		FD0A4FEF23D5A33A00123B94 /* OperatorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0A4FEE23D5A33A00123B94 /* OperatorsViewController.swift */; };
 		FD0A4FF123D5AB2300123B94 /* StringsAndCharactersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0A4FF023D5AB2300123B94 /* StringsAndCharactersViewController.swift */; };
 		FD0A4FF323D5B7EF00123B94 /* CollectionTypesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0A4FF223D5B7EF00123B94 /* CollectionTypesViewController.swift */; };
@@ -84,6 +88,10 @@
 		849ABEB724067FC200619666 /* PickerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PickerViewController.xib; sourceTree = "<group>"; };
 		84DA5DE7240927DD008B42CC /* ActionSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionSheetViewController.swift; sourceTree = "<group>"; };
 		84DA5DE8240927DD008B42CC /* ActionSheetViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActionSheetViewController.xib; sourceTree = "<group>"; };
+		A1D5EC3224C7452F002EE527 /* AppleMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleMapViewController.swift; sourceTree = "<group>"; };
+		A1D5EC3324C7452F002EE527 /* AppleMapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AppleMapViewController.xib; sourceTree = "<group>"; };
+		A1E3C99124C745D100A4EC20 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		A1E3C99324C7463100A4EC20 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		FD0A4FEE23D5A33A00123B94 /* OperatorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperatorsViewController.swift; sourceTree = "<group>"; };
 		FD0A4FF023D5AB2300123B94 /* StringsAndCharactersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringsAndCharactersViewController.swift; sourceTree = "<group>"; };
 		FD0A4FF223D5B7EF00123B94 /* CollectionTypesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionTypesViewController.swift; sourceTree = "<group>"; };
@@ -110,6 +118,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1E3C99424C7463100A4EC20 /* CoreLocation.framework in Frameworks */,
+				A1E3C99224C745D100A4EC20 /* MapKit.framework in Frameworks */,
 				844B0305240667F3007C9E22 /* WebKit.framework in Frameworks */,
 				844B030724066D87007C9E22 /* Foundation.framework in Frameworks */,
 			);
@@ -135,6 +145,8 @@
 		844B030224065585007C9E22 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A1E3C99324C7463100A4EC20 /* CoreLocation.framework */,
+				A1E3C99124C745D100A4EC20 /* MapKit.framework */,
 				844B030624066D87007C9E22 /* Foundation.framework */,
 				844B030324065585007C9E22 /* WebKit.framework */,
 			);
@@ -208,6 +220,15 @@
 			path = "Action Sheet";
 			sourceTree = "<group>";
 		};
+		A1D5EC3124C74509002EE527 /* Apple Map */ = {
+			isa = PBXGroup;
+			children = (
+				A1D5EC3224C7452F002EE527 /* AppleMapViewController.swift */,
+				A1D5EC3324C7452F002EE527 /* AppleMapViewController.xib */,
+			);
+			path = "Apple Map";
+			sourceTree = "<group>";
+		};
 		FD16ECC223BB603E00AC6C31 = {
 			isa = PBXGroup;
 			children = (
@@ -232,6 +253,7 @@
 		FD16ECCD23BB603E00AC6C31 /* sample */ = {
 			isa = PBXGroup;
 			children = (
+				A1D5EC3124C74509002EE527 /* Apple Map */,
 				846034CA2409441200634FF7 /* Page Control */,
 				846034C524092F6F00634FF7 /* Contacts */,
 				84DA5DE6240927C2008B42CC /* Action Sheet */,
@@ -387,6 +409,7 @@
 				84DA5DEA240927DD008B42CC /* ActionSheetViewController.xib in Resources */,
 				FD16ECD623BB604000AC6C31 /* Assets.xcassets in Resources */,
 				FD16ECD423BB603E00AC6C31 /* Main.storyboard in Resources */,
+				A1D5EC3524C7452F002EE527 /* AppleMapViewController.xib in Resources */,
 				844B030B24066FA5007C9E22 /* TableViewController.xib in Resources */,
 				849ABEAF240676E300619666 /* SampleCollectionViewCell.xib in Resources */,
 				846034CE2409442C00634FF7 /* PageControlViewController.xib in Resources */,
@@ -431,6 +454,7 @@
 				FD16ECFD23BB6C8700AC6C31 /* SecondViewController.swift in Sources */,
 				FD16ECD123BB603E00AC6C31 /* ViewController.swift in Sources */,
 				FD0A4FEF23D5A33A00123B94 /* OperatorsViewController.swift in Sources */,
+				A1D5EC3424C7452F002EE527 /* AppleMapViewController.swift in Sources */,
 				FD0A4FF323D5B7EF00123B94 /* CollectionTypesViewController.swift in Sources */,
 				FD16ECCF23BB603E00AC6C31 /* AppDelegate.swift in Sources */,
 				849ABEAE240676E300619666 /* SampleCollectionViewCell.swift in Sources */,
@@ -608,15 +632,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5JMM6D7KM8;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = sample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.wataniya.wataniyakuwait;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sample.swiftapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -626,15 +651,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5JMM6D7KM8;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = sample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.wataniya.wataniyakuwait;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sample.swiftapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
